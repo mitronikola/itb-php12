@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak2</title>
+    <link rel="stylesheet" href="zadatak2.css">
+</head>
+<body>
+    <form action="php.test" method="get">
+        <input type="hidden" name="id" value="3">
+        <fieldset>
+            <legend>Form Validation</legend>
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="user">Username: </label>
+                <input type="text" name="user" id="user">
+            </div>
+            <div>
+                <label for="pass">Password: </label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div>
+                <label for="repass">Re-type password: </label>
+                <input type="password" name="repass" id="repass">
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" id="male"> Male
+                <input type="radio" name="gender" id="female"> Female
+                <input type="radio" name="gender" id="other"> Other
+            </div>
+            <div>
+                <label for="course">Programming skills: </label>
+                <input type="checkbox" name="java" id="yes"> Java
+                <input type="checkbox" name="android" id="yes"> Andorid
+                <input type="checkbox" name="ruby" id="yes"> Ruby
+                <input type="checkbox" name=".net" id="yes"> .Net
+            </div>
+            <div>
+                <label for="num">Contact no: </label>
+                <input type="number" name="num" id="num">
+            </div>
+            <div>
+                <label for="em">Email: </label>
+                <input type="email" name="em" id="em">
+            </div>
+            <div>
+            <label for="college">College: </label>
+            <select name="college" id="college">
+                <option value="">Select college</option>
+                <option value="bg">Univerzitet u Beogradu</option>
+                <option value="ns">Univerzitet u Novom Sadu</option>
+                <option value="ni">Univerzitet u Nisu</option>
+            </select>
+            </div>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+
+    </form>
+
+</body>
+</html>
