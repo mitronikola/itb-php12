@@ -1,0 +1,24 @@
+h2 {
+    text-align: center;
+    color:blue; 
+}
+body {
+    background-color: silver;
+}
+img {
+    border: double yellow;
+}
+.klasa1 {
+    color: green;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#zaseban {
+    color: pink;
+}
+#zaseban a:link {
+    color: red;
+}
+#zaseban a:hover {
+    color: green;
+}
