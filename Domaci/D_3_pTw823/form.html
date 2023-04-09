@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domaci3</title>
+    <link rel="stylesheet" href="fstyle.css">
+</head>
+<body>
+    <form action="test.php" method="get">
+        <input type="hidden" name="id" value="29">
+        <fieldset id="lgn">
+           <legend>Login details</legend>
+           <div class="klasa1">
+                <p>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" maxlength="45" placeholder="Ime" required autofocus>
+                </p>
+                <p>
+                    <label for="em">Email: </label>
+                    <input type="email" name="em" id="em" maxlength="30" placeholder="Email" required>
+                </p>
+                <p>
+                    <label for="pass">Password: </label>
+                    <input type="password" name="pass" id="pass" maxlength="20" placeholder="password" required>
+                </p>
+            </div>    
+        </fieldset>
+        <fieldset id="feed">
+            <legend>Your feedback</legend>
+            <div class="klasa1">
+                <div id="emotions">
+                    <label for="emotions">Please check all emotions that aplly to you: </label> <br/>
+                    <label for="angry" class="labelopt">Angry</label>
+                    <input type="checkbox" name="angry" id="angry" value="yes"> <br/>
+                    <label for="sad" class="labelopt">Sad</label>
+                    <input type="checkbox" name="sad" id="sad" value="yes"> <br/>
+                    <label for="Happy" class="labelopt">Happy</label>
+                    <input type="checkbox" name="happy" id="happy" value="yes"> <br/>
+                    <label for="ambivalent" class="labelopt">Ambivalent</label>
+                    <input type="checkbox" name="ambivalent" id="ambivalent" value="yes"> <br/>
+                </div>
+
+                <div id="service">
+                    <label for="service">How satisfied were you with our service? </label> <br/>
+                    <label for="service5" class="labelopt">Very satisfied</label>
+                    <input type="radio" name="service" id="service5" value="5"> <br/>
+                    <label for="service4" class="labelopt">Satisfied</label>
+                    <input type="radio" name="service" id="service4" value="4"> <br/>
+                    <label for="service3" class="labelopt">Didn't care</label>
+                    <input type="radio" name="service" id="service3" value="3"> <br/>
+                    <label for="service2" class="labelopt">Dissatisfied</label>
+                    <input type="radio" name="service" id="service2" value="2"> <br/>
+                    <label for="service1" class="labelopt">Very dissatisfied</label>
+                    <input type="radio" name="service" id="service1" value="1"> <br/>
+                </div>
+                <div id="futhercomms">
+                    <label for="furthercomms" id="labelcomms">Further comments: </label>
+                    <textarea name="furthercomms" id="furthercomms" cols="30" rows="4"></textarea>
+                </div>
+            </div>
+        </fieldset>
+            <div class="klasa1">
+                <p>
+                    <label for="biofile" style="padding-left: 20px; padding-right: 50px;">Bio photo: </label>
+                    <input type="file" name="biofile" id="biofile">
+                </p>
+                <p>
+                    <label for="location" style="padding-left: 20px; padding-right: 0px;">Location visited: </label>
+                    <select name="location" id="location">
+                        <option value="">Select location</option>
+                        <option value="bg">Beograd</option>
+                        <option value="ns">Novi Sad</option>
+                        <option value="ni">Nis</option>
+                    </select>
+                </p>
+                <p style="padding-left: 60px;">
+                    <input type="submit" value="Submit">
+                </p>
+                <p style="padding-left: 60px;">
+                    <input type="reset" value="reset">
+                </p>          
+            </div>
+
+    </form>
+    
+</body>
+</html>

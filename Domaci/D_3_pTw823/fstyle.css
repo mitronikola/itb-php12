@@ -1,0 +1,46 @@
+body {
+    background-color: slategrey;
+    color: rgb(75, 44, 1);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+fieldset {
+    width: 700px;
+    margin: 10px 10px 0px 30px;
+    border: 5px groove burlywood;
+}
+label {
+    display: inline-block;
+    padding-right: 30px;
+}
+#feed {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: ridge yellowgreen;
+    border-radius: 10px;
+    border-bottom-style: dotted;
+    font-style: italic;
+}
+.klasa1 {
+    margin: 20px 20px 20px 60px;
+}
+.labelopt {
+    display: inline-block;
+    padding: 5px 30px 5px 60px;
+}
+#service {
+    margin-top: 10px;
+}
+#futhercomms {
+    margin-top: 10px;
+}
+#labelcomms {
+    padding-right: 5px;
+}
+legend {
+    color: rgb(9, 9, 92);
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+}
+
