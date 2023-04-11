@@ -1,0 +1,97 @@
+/*horizontalni meni*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar {  
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-color: brown; spusta se ceo nav meni kada se ovo ubaci, nije mi jasno zasto */ 
+    z-index: 1;
+}
+
+.toolbar ul {
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.toolbar ul li {
+    float: left;
+    width: 25%;
+    border: 1px solid black;
+    text-align: center;
+    background-color: brown;
+}
+
+.toolbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block; /*dodajemo block za a-element da bi pojavio padding, jer je a inline element*/
+    font-size: 18px;
+}
+
+.toolbar ul li a:hover {
+    background-color: chocolate;
+}
+
+/* body {
+    padding-top: 40px;
+} */
+
+/*Horizontalni meni*/
+
+.red {
+    position: relative;
+    top: 43px;
+    overflow: hidden; /*nije mi jasno zasto ovde hidden*/
+}
+
+.red aside {
+    float: left;
+    width: 30%;
+    background-color: blueviolet;
+}
+
+.red aside ul {
+    list-style-type: none;
+}
+
+.red aside ul li {
+    border: 1px solid black;
+    text-align: center;
+    background-color: darkgoldenrod;
+}
+
+.red aside ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    font-size: 18px;
+}
+
+.red aside ul li a:hover {
+    background-color: darkorange;
+}
+
+.red section {
+    float: left;
+    width: 70%;
+    background-color: burlywood;
+    padding: 20px;
+}
+
+/*Padajuci meni*/
+
+.dropdown {
+    display: none;
+}
+
+.toolbar li:nth-child(4):hover .dropdown {
+    display: block;
+}
+
