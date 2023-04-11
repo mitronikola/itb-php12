@@ -1,10 +1,27 @@
 label {
     display: inline-block;
     width: 150px;
+    margin: 10px;
 }
 legend {
     font-size: 30px;
 }
-div {
-    margin: 15px;
+#othinf {
+    position: relative;
+    top: 30px;
+    border: 3px solid #73AD21;
+}
+body {
+    background-color: silver;
+}
+#main {
+    border: 3px solid #73AD21;
+}
+
+#sub {
+    padding-top: 50px;
+}
+.ops {
+    display: block;
+
 }

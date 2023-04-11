@@ -1,0 +1,13 @@
+span {
+    border: 2px solid black;
+    margin: 1px 10px 3px 2px;
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    background-color: grey;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+#span1 {
+    background-color: rgb(240, 216, 186);
+}

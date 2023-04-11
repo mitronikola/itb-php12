@@ -12,42 +12,48 @@
         <input type="hidden" name="id" value="3">
         <fieldset>
             <legend>Form Validation</legend>
+            <div id="obrazac">
+            <div id="main">
             <div>
                 <label for="name">Name: </label>
-                <input type="text" name="name" id="name">
-            </div>
+                    <input type="text" name="name" id="name">
+        </div>
             <div>
                 <label for="user">Username: </label>
-                <input type="text" name="user" id="user">
+                    <input type="text" name="user" id="user">
             </div>
             <div>
                 <label for="pass">Password: </label>
-                <input type="password" name="pass" id="pass">
+                    <input type="password" name="pass" id="pass">
             </div>
             <div>
                 <label for="repass">Re-type password: </label>
-                <input type="password" name="repass" id="repass">
+                    <input type="password" name="repass" id="repass">
             </div>
+            </div>
+            <div id="othinf">
             <div>
-                <label for="gender">Gender:</label>
-                <input type="radio" name="gender" id="male" value="male"> Male
-                <input type="radio" name="gender" id="female" value="female"> Female
-                <input type="radio" name="gender" id="other" value="other"> Other
+                <label class="klasa2" for="gender">Gender:</label>
+                    <div class="ops">
+                    Male <input type="radio" name="gender" id="male" value="male">
+                    Female <input  type="radio" name="gender" id="female" value="female">
+                    Other <input type="radio" name="gender" id="other" value="other">
+                    </div>
             </div>
             <div>
                 <label for="course">Programming skills: </label>
-                <input type="checkbox" name="java" id="java" value="yes"> Java
-                <input type="checkbox" name="android" id="andorid" value="yes"> Andorid
-                <input type="checkbox" name="ruby" id="ruby" value="yes"> Ruby
-                <input type="checkbox" name=".net" id=".net" value="yes"> .Net
+                    Java <input type="checkbox" name="java" id="java" value="yes"> 
+                    Android <input type="checkbox" name="android" id="andorid" value="yes">
+                    Ruby <input type="checkbox" name="ruby" id="ruby" value="yes">
+                    .Net <input type="checkbox" name=".net" id=".net" value="yes">
             </div>
             <div>
                 <label for="num">Contact no: </label>
-                <input type="number" name="num" id="num">
+                    <input type="number" name="num" id="num">
             </div>
             <div>
                 <label for="em">Email: </label>
-                <input type="email" name="em" id="em">
+                    <input type="email" name="em" id="em">
             </div>
             <div>
             <label for="college">College: </label>
@@ -58,11 +64,14 @@
                 <option value="ni">Univerzitet u Nisu</option>
             </select>
             </div>
+        </div>
+            <div id="sub">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
         </fieldset>
 
-        <p>
-            <input type="submit" value="Submit">
-        </p>
+        
 
     </form>
 

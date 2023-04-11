@@ -1,0 +1,30 @@
+div {
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    width: 200px;
+    height: 130px;
+}
+
+#d2 {
+    position: fixed;
+    top: 30px;
+    left: 100px;
+}
+
+#d2 h3 {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    margin: 0;
+}
+#d2 p {
+    position: absolute; /*absoulte radi u odnosu na prvog pretka ali koji ima podesenu neku poziciju*/
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+
+div:last-of-type {
+    z-index: 100;
+    position: relative;
+}

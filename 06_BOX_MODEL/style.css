@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    /*
+    border-style: solid;
+    border-width: 3px;
+    border-color: blue;
+    border-radius: 20%;
+    */
+    border: 3px solid blue;
+    margin-right: 10px;
+    /* inline element ne moze margin-top i margin-bottom
+    margin-top: 30px;
+    */
+    padding: 5px 10px 15px 20px;
+    width: 100px;
+    height: 70px;
+    display: inline-block;
+}
+div {
+    border: 1px dashed black;
+    margin: 30px 10px 5px 40px;
+    width: 300px; /*samo za blok elemente*/
+    height: 200px; /*samo za blok elemente*/
+    /*margina ne ulazi u velicinu elementa, nije deo elementa*/
+}
+#d1 {
+    margin: 0;
+    width: 100%;
+}
+#d1 span {
+    background-color: aquamarine;
+    border: 2px solid black;
+    padding: 10px 5px 3px 15px;
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+    
+}
+
+
