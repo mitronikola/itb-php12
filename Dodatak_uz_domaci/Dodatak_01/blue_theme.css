@@ -1,9 +1,0 @@
-/*ubacio bih ovaj eksterni css fajl posle prvobitno ubacenog style.css fajla
-<link rel="stylesheet" href="../Dodatak_uz_domaci/Dodatak_01/blue_theme.css">*/
-body {
-    background-color: darkblue;
-    color: white;
-}
-p {
-    color: white !important;
-}
