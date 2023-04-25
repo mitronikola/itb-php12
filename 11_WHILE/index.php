@@ -162,16 +162,103 @@
         }
         $i++;
     }
+
+    //Zadatak 11, ispravan nacin
+    $br = 0;
+    $k = 15;
+    $i = 1;
+    while ($i <= $k) {
+        if ($k % $i == 0) {
+            $br++;
+        }
+        $i++;  
+    }
+    echo "<p>Broj $k ima $br delilaca</p>";
+
     
     //Zadatak 12
-    $n = 25;
-    if ($n % 2 == 0 || $n % 3 == 0 || $n % 5 == 0) {
+    $n = 37;
+    if ($n > 1 && ($n % 2 == 0 || $n % 3 == 0 || $n % 5 == 0)) {
         echo "<p>Broj nije prost</p>";
     }
     else {
         echo "<p>Broj je prost</p>";
     }
+
+    //Zadatak 12, ispravan nacin
+
+    $br = 0;
+    $k = 13;
+    $i = 1;
+    while ($i <= $k) {
+        if ($k % $i == 0) {
+            $br++;
+        }
+        $i++;  
+    }
+    if ($br == 2) {
+        echo "<p>Broj $k je prost</p>";
+    }
+    else {
+        echo "<p>Broj $k nije prost</p>";
+    }
+
+    //Zadatak 12. 2 nacin
+
+    $k = 8;
+    $i = 2;
+    $prost = true;
+    // while ($i <= sqrt($k))
+    while ($i < $k) {
+        if ($k % $i == 0) {
+            $prost = false;
+            break;
+        }
+        $i++;
+    }
+    if ($prost == true) {
+        echo "<p>Broj $k jeste prost</p>";
+    }
+    else {
+        echo "<p>Broj $k nije prost</p>";
+    }
     
+    //Zadatak 13
+    $i = 21;
+    $proizvod = 1;
+    while ($proizvod <= 10000 && $i >= 1) {
+        $i--;
+        $proizvod = $proizvod * $i;  
+    }
+    echo "<p style='color:red'>$proizvod <span style='color:green'>$i</span> </p>";
+
+    //Zadatak 13, ispravan nacin
+    $i = 20;
+    $p = 1;
+    while ($i >= 1) {
+        $p = $p * $i;
+        if ($p > 10000) {
+            break;
+        }
+        $i--;
+    }
+    echo "<p>Poslednji broj koji je ucestvovao je $i</p>";
+    echo "<p>Proizvod je $p</p>";
+
+    //Zadatak 14
+    $a = 3;
+    $b = 80;
+    $p14 = 1;
+    if ($a < $b) {
+        while ($p14 <= $b) {
+            $p14 *= $a;
+        }
+        echo "<p>$p14</p>";
+    }
+    else {
+        echo "<p>GRESKA</p>";
+    }
+
         
 
 ?>
