@@ -241,4 +241,208 @@
 
     ////////////////////////////////////
 
-?>
+    // Zadatak 7.
+    echo "<hr>";
+    $brojevi = [5, 6, 14, -4, 14, 11, -7, 14];
+    $zbir = 0;
+    $broj = 0;
+
+    for ($i=0; $i < count($brojevi); $i++) {
+        $zbir += $brojevi[$i];
+    }
+
+    $arsr = $zbir / count($brojevi);
+
+    for ($i=0; $i < count($brojevi); $i++) {
+        if ($brojevi [$i] > $arsr) {
+            $broj++;
+        }
+    }
+
+    echo "<p>Elemenata celobrojnog niza koji su veci od srednje vrednosti niza ima: $broj.</p>";
+
+    // Zadatak 8.
+    echo "<hr>";
+    $brojevi = [5, 6, 14, -4, 14, 11, -7, 14];
+    $zbir = 0;
+    for ($i = 0; $i < count($brojevi); $i++) {
+        if ($brojevi[$i] > 0) {
+            $zbir += $brojevi[$i];
+        }
+    }
+    echo "<p>Zbir pozitivnih elemenata celobrojnog niza je: $zbir.</p>";
+
+    // Bonus zadatak
+    // Izracunati srednju vrednost parnih elemenata celobrojnog niza
+    $zbir = 0;
+    $broj = 0;
+    for ($i = 0; $i < count($brojevi); $i++) {
+        if ($brojevi[$i] % 2 == 0) {
+            $zbir += $brojevi[$i];
+            $broj++;
+        }
+    }
+    if ($broj != 0) {
+    $arsr = $zbir / $broj;
+    }
+    else {
+        $arsr = 0;
+    }
+    echo "<p>Srednja vrednost parnih elemenata celobrojnog niza je: $arsr</p>";
+
+    // Zadatak 9.
+    echo "<hr>";
+    $brojevi = [5, 6, 14, -4, 14, 11, -7, 14];
+    $br = 0;
+    for ($i = 0; $i < count($brojevi); $i++) {
+        if ($brojevi[$i] % 2 == 0) {
+            $br++;
+        }
+    }
+    echo "<p>Broj parnih elemenata celobrojnog niza je: $br.</p>";
+
+    // Zadatak 10.
+    echo "<hr>";
+    $brojevi = [5, 6, 14, -4, 14, 11, -7, 14];
+    $zbir = 0;
+    for ($i = 0; $i < count($brojevi); $i++) {
+        if ($i % 2 == 0) {
+            $zbir += $brojevi[$i];
+        }
+    }
+    echo "<p>Zbir elemenata celobrojnog niza sa parnim indeksom je: $zbir.</p>";
+
+    // Zadatak 11.
+    echo "<hr>";
+    $brojevi = [5, 6, 14, -4, 14, 11, -7, 14];
+    for ($i = 0; $i < count($brojevi); $i++) {
+        $brojevi[$i] *= -1;
+    }
+    print_r ($brojevi);
+    
+    // Zadatak 12.
+    echo "<hr>";
+    $brojevi = [5, 6, 13, -4, 15, 11, -7, 14];
+    for ($i = 0; $i < count($brojevi); $i++) {
+        if ($brojevi[$i] % 2 != 0 && $i % 2 == 0)
+        $brojevi[$i] *= -1;
+    }
+    print_r ($brojevi);
+
+    // Zadatak 13.
+    echo "<hr>";
+    $brojevi = [5, 6, 13, -4, 15, 11, -7, 14];
+    $br = 0;
+    for ($i = 0; $i < count($brojevi); $i++) {
+        if ($brojevi[$i] % 2 == 0 && $i % 2 != 0)
+        $br++;
+    }
+
+    echo "<p>Broj parnih elemenata sa neparnim indeksom je: $br</p>";
+
+    // Zadatak 14.
+    echo "<hr>";
+    $cars = ["Toyota", "Audi", "Peugeot", "BMW", "Mercedes"];
+    for ($i = 0; $i < count($cars); $i++) {
+        echo "<p> Duzina stringa " . $cars[$i] . " je: " . strlen($cars[$i] . "</p>");
+    }
+
+    // Zadatak 15.
+    echo "<hr>";
+    $cars = ["Toyota", "Audi", "Peugeot", "BMW", "Mercedes"];
+    $max = strlen($cars[0]);
+    for ($i = 1; $i < count($cars); $i++) {
+        if (strlen($cars[$i]) > $max) {
+            $max = strlen($cars[$i]);
+            $carsMax = $cars[$i];
+        }
+    }
+    
+    echo "<p>Element u nizu sa najvecom duzinom je: $carsMax</p>";
+
+    // Zadatak 16.
+    echo "<hr>";
+    $cars = ["Toyota", "Audi", "Peugeot", "BMW", "Mercedes"];
+    $br = 0;
+    $zbir = 0;
+    for ($i = 0; $i < count($cars); $i++) {
+        $zbir += strlen($cars[$i]);
+    }
+    $arsr = $zbir / count($cars);
+    for ($i = 0; $i < count($cars); $i++) {
+        if (strlen($cars[$i]) > $arsr) {
+            $br++;
+        }
+    }
+
+    echo "<p>Broj elemenata u nizu cija je duzina veca od prosecne duzine svih stringova je: $br</p>";
+
+    // Zadatak 17.
+    echo "<hr>";
+
+    // Kako da odredimo da li se u nekom stringu nalazi neki podstring?
+    // Koristimo funkciju strpos($str1, $str2)
+    // Rezultat poziva ove f-je:
+    // 1) Ako se $str2 nalazi unutar $str1, onda se vraca INDEKS PRVOG pojavljivanja
+    // CEO BROJ (0, 1, 2, 3, ...), CASE SENSITIVE
+    // 2) Ako se $str2 ne nalazi unutar $str1, onda se vraca FALSE
+    // VRACA LOGICKU VREDNOST
+    // var_dump(strpos("Sreda", "a"));
+
+
+
+    $cars = ["Toyota", "Audi", "Peugeot", "BMW", "Mercedes", "Renault"];
+    $br = 0;
+    for ($i = 0; $i < count($cars); $i++) {
+        if (strpos($cars[$i], "a") !== false) {
+            $br++;
+        }
+    }
+    echo "<p>Broj elemenata u nizu koji sadrze slovo 'a' je: $br";
+
+    //Zadatak 18.
+    $cars = ["Toyota", "Audi", "Peugeot", "BMW", "Mercedes", "Renault", "Aston Martin"];
+    $brojPocinjeA = 0;
+    for ($i = 0; $i < count($cars); $i++) {
+        // if ($cars[$i][0] == "a" || $cars[$i][0] == "A")
+        // if (strtolower($cars[$i][0]) == "a")
+        if (strpos($cars[$i], "a") === 0 || strpos($cars[$i], "A") === 0) {
+            $brojPocinjeA++;
+        }
+    }
+    echo "<p>Broj elemenata u nizu koji pocinju na slovo 'a' ili 'A' je: $brojPocinjeA";
+
+
+    // Napredniji zadaci 
+    // Zadatak 19. 
+    echo "<hr>";
+    $a = [-9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    for ($i = $a[0]; $i <= $a[count($a)-1]; $i++) {
+        if($i > 0) {
+        $b[] = $i;
+        }
+    } 
+
+
+    print_r($b);
+
+    // Zadatak 20.
+    echo "<hr>";
+    $a = [-9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    $b = [-9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8];
+    for ($i = $a[0], $j = $b[0]; $i <= $a[count($a)-1], $j <= $b[count($b)-1]; $i++, $j++) {
+        $c[] = [$i, $j] ;
+    }
+    
+    print_r($c);
+
+
+
+
+
+
+
+
+
+
+?>  
