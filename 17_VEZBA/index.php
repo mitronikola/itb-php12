@@ -378,7 +378,74 @@
     echo "<hr>";
     echo poklapanje($student, "psiho", 10, 7);
 
-    //////////////////// Zadatak 3.
+    /* ZADATAK 3. (NIZOVI OBJEKATA)
+    Napisati klasu Ispit koja od privatnih polja sadrži:
+    naziv predmeta (string),
+    semestar (broj od 1 do 8),
+    broj ESPB bodova (broj od 1 do 30),
+    ocena (broj od 6 do 10),
+    datum polaganja (string u formatu YYYY/MM/DD). */
+
+    class Ispit{
+        private $nazivPredmeta;
+        private $semestar;
+        private $brojESPB;
+        private $ocena;
+        private $datumPolaganja;
+
+        public function setNazivPredmeta($np){
+            if(is_string($np)){
+                $this->nazivPredmeta = $np;
+            }
+            else{
+                $this->nazivPredmeta = "naziv predmeta nije validan";
+            }
+        }
+        public function getNazivPredmeta(){
+            return $this->nazivPredmeta;
+        }
+
+        public function setSemestar($s){
+            if(is_int($s)){
+                $this->semestar = $s;
+            }
+            else{
+                $this->semestar = "semestar nije validan";
+            }
+        }
+        public function getSemestar(){
+            return $this->semestar;
+        }
+
+        public function setESPB($espb){
+            if(is_int($espb)){
+                $this->brojESPB = $espb;
+            }
+            else{
+                $this->brojESPB = "broj ESPB nije validan";
+            }
+        }
+        public function getESPB(){
+            return $this->brojESPB;
+        }
+
+        public function setOcena($o){
+            if(is_int($ocena)){
+                $this->ocena = $o;
+            }
+            else{
+                $this->ocena = "ocena nije validna";
+            }
+        }
+        public function getOcena(){
+            return $this->ocena;
+        }
+
+        public function setDatumPolaganja($dp){
+            
+        }
+    }
+
 
     
 
